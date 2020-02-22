@@ -13,7 +13,3 @@ class SimpleIterator:
                 return self.counter
         else:
             raise StopIteration
-
-s_iter2 = SimpleIterator(5)
-for i in s_iter2:
-    print(i)
