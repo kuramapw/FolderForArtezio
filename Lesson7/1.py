@@ -1,21 +1,16 @@
 import timeit
 import time
 
-t = 0
-n = 0
-
 
 def average_time():
-    global t
-    global n
+    t=0
+    n=0
 
     def inner_decorator(func):
-        global t
-        global n
 
         def wrapper(a):
-            global t
-            global n
+            nonlocal t
+            nonlocal n
             t = t + a
             n = n + 1
             print(t / n)
